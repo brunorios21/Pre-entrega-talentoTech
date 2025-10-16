@@ -10,9 +10,7 @@ El trabajo completo demandó aproximadamente **dos semanas**, incluyendo la reda
 
 El sitio web está compuesto por tres archivos principales:  
 **index.html**, que contiene la estructura de la página.  
-**style.css**, donde se definieron los estilos visuales y las animaciones leves.  
-**script.js**, con las interacciones y ejemplos de código en JavaScript.
-
+**estilo.css**, donde se definieron los estilos visuales y las animaciones leves.  
 
 ## Contenido técnico
 
