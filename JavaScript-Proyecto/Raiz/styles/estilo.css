@@ -1,0 +1,90 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #f5f5f5;
+  background: linear-gradient(120deg, #1d2671, #c33764);
+  background-size: 200% 200%;
+  animation: movimiento 10s ease infinite;
+}
+/* Esta animación mueve el fondo de izquierda a derecha */
+@keyframes movimiento {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.bloque {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bloque h2 {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 0.5rem;
+}
+
+.bloque p, .bloque ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.6);
+  color: #00ffcc;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.sobre-mi {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #ffcc00;
+}
