@@ -36,7 +36,18 @@ Las animaciones se realizaron únicamente con CSS y sin librerías externas, res
 
 
 
+Visualización del proyecto
+Para visualizar correctamente la página se recomienda utilizar Visual Studio Code y la extensión Live Server. Una vez descargado o clonado el repositorio desde GitHub, basta con abrir el archivo index.html dentro de Visual Studio Code, hacer clic derecho sobre él y seleccionar la opción “Open with Live Server”.
+
+Esto abrirá la página en el navegador, permitiendo ver las animaciones y ejemplos en funcionamiento.
+
+Conclusión
+El resultado final es una página educativa que combina teoría y práctica de manera clara y visual, desarrollada completamente con las herramientas y metodologías vistas en el curso. Representa el esfuerzo personal por unir los conocimientos adquiridos en la UNPAZ y Talento Tech, aplicando HTML, CSS y JavaScript de forma coherente y comprensible.
+
+
+
 ## Ejemplo de código
+
 
 ```javascript
 class Personaje {
@@ -50,12 +61,4 @@ class Personaje {
 }
 
 const floki = new Personaje("Floki");
-floki.saludar();
-
-Visualización del proyecto
-Para visualizar correctamente la página se recomienda utilizar Visual Studio Code y la extensión Live Server. Una vez descargado o clonado el repositorio desde GitHub, basta con abrir el archivo index.html dentro de Visual Studio Code, hacer clic derecho sobre él y seleccionar la opción “Open with Live Server”.
-
-Esto abrirá la página en el navegador, permitiendo ver las animaciones y ejemplos en funcionamiento.
-
-Conclusión
-El resultado final es una página educativa que combina teoría y práctica de manera clara y visual, desarrollada completamente con las herramientas y metodologías vistas en el curso. Representa el esfuerzo personal por unir los conocimientos adquiridos en la UNPAZ y Talento Tech, aplicando HTML, CSS y JavaScript de forma coherente y comprensible.
+floki.saludar(); 
