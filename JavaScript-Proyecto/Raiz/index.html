@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradigmas de Programación - Bruno Ríos</title>
+  <link rel="stylesheet" href="styles/estilo.css" />
+  <link rel="icon" type="image/svg+xml" href="styles/logo.svg">
+</head>
+<body>
+  <header>
+    <h1>Paradigmas de Programación</h1>
+    <p class="subtitulo">Aprendé los fundamentos de la programación moderna con ejemplos claros y simples</p>
+    <nav>
+      <a href="#intro">Inicio</a>
+      <a href="#clases">Clases y Objetos</a>
+      <a href="#polimorfismo">Polimorfismo</a>
+      <a href="#juego">Desafío del Juego</a>
+      <a href="#sobre-mi">Sobre mí</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="intro" class="bloque">
+      <h2>Bienvenido</h2>
+      <p>Esta página está pensada para repasar los temas aprendidos en clase sobre JavaScript y los <b>paradigmas de programación</b>.  
+      A través de ejemplos y explicaciones sencillas, podrás comprender cómo los objetos, las clases y el polimorfismo le dan vida a nuestros programas.</p>
+    </section>
+
+    <section id="clases" class="bloque">
+      <h2>Clases y Objetos</h2>
+      <p>Una <strong>clase</strong> es como un molde para crear objetos.  
+      Por ejemplo, podemos definir una clase <code>Gato</code> con sus atributos y métodos:</p>
+
+      <pre><code class="codigo">
+class Gato {
+  constructor(nombre, color) {
+    this.nombre = nombre;
+    this.color = color;
+  }
+
+  maullar() {
+    console.log(this.nombre + " dice: ¡Miau!");
+  }
+}
+
+const michi = new Gato("Michi", "gris");
+michi.maullar();
+      </code></pre>
+
+      <p>La clase define las características generales y cada objeto creado es una instancia única de esa clase.</p>
+    </section>
+
+    <section id="polimorfismo" class="bloque">
+      <h2>Polimorfismo</h2>
+      <p>El polimorfismo significa que un mismo método puede comportarse de diferentes formas según el objeto.</p>
+
+      <pre><code class="codigo">
+class Animal {
+  hacerSonido() {
+    console.log("Sonido genérico...");
+  }
+}
+
+class Perro extends Animal {
+  hacerSonido() {
+    console.log("¡Guau!");
+  }
+}
+
+class Gato extends Animal {
+  hacerSonido() {
+    console.log("¡Miau!");
+  }
+}
+
+const animales = [new Perro(), new Gato()];
+animales.forEach(a => a.hacerSonido());
+      </code></pre>
+
+      <p>Con esto, el mismo método <code>hacerSonido()</code> se adapta al tipo de objeto.</p>
+    </section>
+
+    <section id="juego" class="bloque">
+      <h2>Desafío: Juego con Personajes y Elementos</h2>
+      <p>Este desafío propone modelar un pequeño juego en el que personajes y elementos interactúan.  
+      Cada objeto tiene propiedades y comportamientos específicos.</p>
+
+      <ul>
+        <li><b>Luisa</b>: jugadora que maneja personajes.</li>
+        <li><b>Floki</b>: guerrero con armas como ballesta o jabalina.</li>
+        <li><b>Mario</b>: trabajador que recolecta y construye.</li>
+        <li><b>Elementos</b>: castillo, vaca “Aurora” y árbol “Tipa”.</li>
+      </ul>
+
+      <p>Ejemplo de estructura básica:</p>
+
+      <pre><code class="codigo">
+class Castillo {
+  constructor(defensa) {
+    this.defensa = defensa;
+  }
+
+  recibirAtaque(potencia) {
+    this.defensa -= potencia;
+    console.log("Defensa restante:", this.defensa);
+  }
+}
+
+const castillo = new Castillo(150);
+castillo.recibirAtaque(30); // Defensa restante: 120
+      </code></pre>
+    </section>
+
+    <section id="sobre-mi" class="bloque sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Mi nombre es <strong>Bruno Ríos</strong>. Soy estudiante de Gestión de las Tecnologías de la Información y apasionado por el desarrollo web.  
+      Este proyecto combina mi aprendizaje en <b>Talento Tech</b> y mis estudios sobre <b>Paradigmas de Programación</b> en la UNPAZ.</p>
+
+      <p>Mi objetivo es seguir creciendo como programador, combinando la teoría con la práctica y compartiendo lo que aprendo con otros.</p>
+
+      <h3>Contacto</h3>
+      <ul class="contacto">
+        <li>Email: <a href="mailto:brunorioscorp4@gmail.com">brunorioscorp4@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/bruno-rios-576016328/" target="_blank">bruno-rios</a></li>
+        <li>GitHub: <a href="https://github.com/brunorios21" target="_blank">brunorios21</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bruno Ríos — Proyecto educativo sobre JavaScript y Paradigmas de Programación</p>
+    <p>Contacto: <a href="mailto:brunorioscorp4@gmail.com">brunorioscorp4@gmail.com</a> | 
+       <a href="https://www.linkedin.com/in/bruno-rios-576016328/" target="_blank">LinkedIn</a> | 
+       <a href="https://github.com/brunorios21" target="_blank">GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
